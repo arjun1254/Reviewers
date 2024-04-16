@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Restaurant" ALTER COLUMN "address" DROP DEFAULT,
+ALTER COLUMN "address" SET DATA TYPE TEXT;

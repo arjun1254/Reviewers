@@ -1,0 +1,20 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Router } from 'express'
+
+import * as reviewsController from '../controllers/reviews.controller'
+import { validate } from '../utils/Validate'
+import { createRestaurantDto } from '../Validators/create-restro.validators'
+import { authenticateToken, isAdmin } from '../middleware/authentication.middleware'
+import { createReviewDto } from '../Validators/create-review.validator'
+
+const router = Router({ mergeParams: true })
+
+// router.get('/', authenticateToken, reviewsController.findAll)
+router.post(`/`, validate(createReviewDto), authenticateToken, reviewsController.create)
+
+// router.delete(`/:id`, authenticateToken, isAdmin, reviewsController.deleteById)
+// router.patch(`/:id`, authenticateToken, isAdmin, reviewsController.updateByID)
+
+// router.get(`/:id`, authenticateToken, isAdmin, reviewsController.findByID)
+
+export default router
