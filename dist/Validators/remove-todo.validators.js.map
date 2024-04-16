@@ -1,0 +1,1 @@
+{"version":3,"file":"remove-todo.validators.js","sourceRoot":"","sources":["../../src/Validators/remove-todo.validators.ts"],"names":[],"mappings":";;;AAEA,6BAAuB;AAGV,QAAA,aAAa,GAAG,OAAC,CAAC,MAAM,CAAC;IAClC,KAAK,EAAE,OAAC,CAAC,MAAM,CAAC;QACZ,EAAE,EAAE,OAAC,CAAC,MAAM,CAAC;YACT,cAAc,EAAE,gBAAgB;SACnC,CAAC;KAET,CAAC;CACD,CAAC,CAAA"}
